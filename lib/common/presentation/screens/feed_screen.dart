@@ -26,7 +26,7 @@ class _FeedScreenState extends State<FeedScreen> {
       child: Consumer<FeedController>(
         builder: (context, value, child) {
           return CommonBody(
-            title: 'Feed Screen: ${value.counter}',
+            title: 'Feed: ${value.counter}',
             onPressed: () {
               context.read<FeedController>().increment();
             },
